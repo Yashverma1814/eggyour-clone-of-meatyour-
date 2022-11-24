@@ -1,6 +1,9 @@
 :root {
   --red-brown: #A52A2A;
   --butter-scotch: #EDDA74;
+  --left-margin: 15%;
+  --buff:#DAA06D;
+  --dark-brown:#800020;
 }
 
 body {
@@ -20,9 +23,57 @@ code {
 /* Home page */
 
 .delNav{
+  text-align: center;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   color:  var(--red-brown);
   font-weight: 700;
   background-color: var(--butter-scotch)  ;
+}
+
+/* navbar */
+.nav{
+  padding: 1rem;
+  background-color: var(--buff);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.company{
+  color: var(--dark-brown);
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-left: var(--left-margin);
+}
+.source{
+  color: var(--dark-brown);
+  font-size: 1.32rem;
+  font-weight: 800;
+  margin-left: var(--left-margin);
+  padding-bottom: 0.5rem;
+}
+.navOptions{
+  color: var(--dark-brown);
+}
+.cartButton{
+  color: var(--dark-brown);
+  border: 2px solid var(--dark-brown);
+}
+.options{
+  width: 16%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 1.2rem;
+  margin-left: 50%;
+}
+.searchIcon:hover{
+  color: var(--red-brown);
+  transition: 0.3s;
+}
+.cartIcon:hover{
+  color: var(--red-brown);
+  transition: .3s;
+}
+.menuIcon:hover{
+  color: var(--red-brown);
+  transition: .3s;
 }
