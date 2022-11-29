@@ -1,7 +1,7 @@
 :root {
   --red-brown: #A52A2A;
   --butter-scotch: #EDDA74;
-  --left-margin: 15%;
+  --left-margin: 27%;
   --buff:#DAA06D;
   --dark-brown:#800020;
 }
@@ -76,4 +76,58 @@ code {
 .menuIcon:hover{
   color: var(--red-brown);
   transition: .3s;
+}
+
+
+/* home mid 1 */
+
+.imageSec{
+  display: grid;
+  margin-left: 14%;
+  margin-top: 3rem;
+  grid-template-columns: repeat(2,1fr);
+}
+.midHeading{
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--dark-brown);
+}
+.midImage{
+  width: 65%;
+}
+.subHeadingMid>div{
+  font-weight: 500;
+}
+.subHeadingMid{
+  margin-top: 1.5rem;
+}
+.orderNowButton{
+  font-size: 1rem;
+  color: var(--dark-brown);
+  background-color: white;
+  margin-top: 2rem;
+  font-weight: 800;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid var(--dark-brown);
+  transition: .3s;
+}
+.orderNowButton:hover{
+  border: 2px solid var(--dark-brown);
+  transition: .3s;
+}
+.mainMid2{
+  background-color: var(--buff);
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+/* productpage */
+.productHeading{
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--dark-brown);
+}
+.price{
+
 }
