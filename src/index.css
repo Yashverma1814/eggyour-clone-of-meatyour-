@@ -129,5 +129,63 @@ code {
   color: var(--dark-brown);
 }
 .price{
-
+  color: var(--dark-brown);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cod{
+  margin-top: 0.7rem;
+  color: var(--dark-brown);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.quan{
+  margin-top: 0.7rem;
+  color: var(--dark-brown);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+.option{
+  margin-top: 0.7rem;
+  color: var(--dark-brown);
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+  border: none;
+}
+.addToCart{
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 800;
+  color: var(--dark-brown);
+  background-color: white;
+  border: 1px solid var(--dark-brown);
+  font-size: 1rem;
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+}
+.addToCart:hover{
+  border: 2px solid var(--dark-brown);
+  transition: 0.3s;
+}
+.buyNow{
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 800;
+  color: white;
+  background-color: var(--dark-brown);
+  border: 1px solid var(--dark-brown);
+  font-size: 1rem;
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
+  
+}
+.buyNow:hover{
+  background-color: var(--red-brown);
+  transition: 0.3s;
+}
+.orderPageGrid{
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
 }
