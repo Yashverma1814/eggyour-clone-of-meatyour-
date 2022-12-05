@@ -189,3 +189,6 @@ code {
   display: grid;
   grid-template-columns: 35% 35% 30%;
 }
+.contInfo{
+  font-size: 1.15rem;
+}
