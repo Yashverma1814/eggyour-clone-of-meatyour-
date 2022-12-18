@@ -13,7 +13,7 @@ function App() {
         <Route path='/information' element={<InfoPage />} />
       </Routes>
       {/* <HomePage /> */}
-      {/* <ProductsPage />       */}
+      {/* <ProductsPage />*/}
       {/* <InfoPage /> */}
     </div>
   );
