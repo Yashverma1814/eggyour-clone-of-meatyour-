@@ -61,7 +61,7 @@ code {
 .options{
   width: 16%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   margin: 1.2rem;
   margin-left: 50%;
 }

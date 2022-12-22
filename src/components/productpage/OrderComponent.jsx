@@ -1,29 +1,27 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import {v4 as uuid} from 'uuid'
+import {v4 as uuid} from 'uuid';
 import { addItem } from '../../redux/Cart/action';
 
 
 export const OrderComponent = () => {
   const dispatch = useDispatch();
-  const cartGlobalState = useSelector((state)=>state.cart.item)
   const options = ['30 Eggs-Rs 329 Most Ordered', `24 Eggs-Rs 290`, `12 Eggs-Rs 160`,`60 Eggs-Rs 600`, `90 Eggs-Rs 879`];
-  const [quan,setQuan] = useState('');
+  const [quan,setQuan] = useState('30');
+  const globalState = useSelector((state)=>state);
   const optionHandler = (e) =>{
     let val = e.target.value;
     val = val.split('-');
     let subVal = val[0];
     subVal = subVal.split(' ');
-    console.log(subVal[0]);
     setQuan(subVal[0]);
   }
   const handleAdd = () =>{
     const payload = {
       quan,
       id:uuid()
-    }
+    };
     dispatch(addItem(payload));
-    console.log(`dispatched ${cartGlobalState}`)
   }
   return (
     <div style={{marginLeft:'20%',marginTop:'5rem'}}>
@@ -58,7 +56,7 @@ export const OrderComponent = () => {
           </div>
         </div>
         <div>
-          Cart value {cartGlobalState}
+          {/* Cart value {cartGlobalState} */}
         </div>
     </div>
   )
