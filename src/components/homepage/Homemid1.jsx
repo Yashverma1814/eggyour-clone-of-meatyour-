@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Homemid1 = () => {
   return (
@@ -17,7 +18,9 @@ export const Homemid1 = () => {
                 <div> GRASS , INSECTS FOR ADDITIONAL NUTRITION.RAISED</div>
                 <div> HAPPILY AT THE FARM!</div>
                 <div>
-                    <button className='orderNowButton'>ORDER NOW!!!!</button>
+                    <Link to='/products'>
+                        <button className='orderNowButton'>ORDER NOW!!!!</button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@ export const InformationAddingPage = () => {
             <TextField id="outlined-basic" label="City" variant="outlined" />
           </div>
           <div>
-            <Button variant="contained" style={{color:'white',backgroundColor:'brown  '}}>Continue</Button>
+            <Button variant="contained" style={{color:'white',backgroundColor:'brown  '}}>place Order</Button>
           </div>
         </div>
     </div>

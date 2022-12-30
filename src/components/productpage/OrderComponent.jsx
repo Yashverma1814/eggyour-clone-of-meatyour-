@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {v4 as uuid} from 'uuid';
 import { addItem } from '../../redux/Cart/action';
 
@@ -47,16 +48,15 @@ export const OrderComponent = () => {
                 <button className='addToCart' onClick={handleAdd}>Add To Cart</button>
               </div>
               <div>
-                <button className='buyNow'>Buy It Now</button>
+              <Link to='/cart'>
+                <button className='buyNow' onClick={handleAdd}>Buy It Now</button>
+              </Link>
               </div>
               
           </div>
           <div>
             <img src="https://cdn.shopify.com/s/files/1/0595/0449/2726/products/MEATYOUR_7_503x.png?v=1640575967" alt="" />
           </div>
-        </div>
-        <div>
-          {/* Cart value {cartGlobalState} */}
         </div>
     </div>
   )

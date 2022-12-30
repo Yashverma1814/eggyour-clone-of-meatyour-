@@ -192,3 +192,88 @@ code {
 .contInfo{
   font-size: 1.15rem;
 }
+
+/* cart page */
+
+
+.productCard{
+  width: 70%;
+  display: grid;
+  grid-gap: 5%;
+  color: var(--dark-brown);
+  padding: 1rem;
+  font-weight: 700;
+  grid-template-columns: 70% 30%;
+}
+.removeButtonDiv{
+  padding-left: 0.8rem;
+}
+.removeButton{
+  border: none;
+  color: red;
+  background-color: white;
+}
+.allCards{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.partition{
+  background-color: var(--red-brown);
+}
+.backIcon{
+  color:var(--red-brown);
+}
+.cartHeading{
+  color: var(--red-brown);
+  font-weight: 700;
+  font-size: 1.2rem
+}
+.cartNav{
+  width: 20%;
+  padding: 1.3rem;
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.subTotal{
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 1rem;
+  color: var(--red-brown);
+}
+.totalPayment{
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 1rem;
+  margin-right: 3rem;
+  color: var(--red-brown);  
+}
+.subTotalMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.taxes{
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 1rem;
+  color: var(--red-brown);  
+}
+.checkOut{
+  border: 0.1px solid var(--dark-brown);
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 1.2rem;
+  color: var(--red-brown);
+  background-color: white;
+  transition: .3s;
+}
+.checkOut:hover{
+  transition: .3s;
+  border: 2px solid var(--dark-brown);
+}
+.mTag{
+  font-weight: 500;
+  color: var(--dark-brown);
+}
