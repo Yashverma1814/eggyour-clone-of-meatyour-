@@ -1,6 +1,7 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 export const InformationAddingPage = () => {
   return (
@@ -26,7 +27,9 @@ export const InformationAddingPage = () => {
             <TextField id="outlined-basic" label="City" variant="outlined" />
           </div>
           <div>
-            <Button variant="contained" style={{color:'white',backgroundColor:'brown  '}}>place Order</Button>
+            <Link to='/thanks'>
+              <Button variant="contained" style={{color:'white',backgroundColor:'brown  '}}>place Order</Button>
+            </Link>
           </div>
         </div>
     </div>

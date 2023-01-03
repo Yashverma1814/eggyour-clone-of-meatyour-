@@ -277,3 +277,10 @@ code {
   font-weight: 500;
   color: var(--dark-brown);
 }
+
+/* thank you image */
+
+.thanksImg{
+  width: 100%;
+  object-fit: cover;
+}
