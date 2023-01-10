@@ -13,7 +13,9 @@ export const CartPage = () => {
     <div>
         <div>
             <div className='cartNav'>
-              <div><ArrowBackIcon className='backIcon'/></div>
+              <Link to='/products'>
+                <div><ArrowBackIcon className='backIcon'/></div>
+              </Link>
               <div className='cartHeading'>CONTINUE SHOPPING</div>
             </div>
             <hr className='partition'/>

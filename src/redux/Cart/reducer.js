@@ -39,6 +39,32 @@ export const reducer = (state=initState,action) => {
                 counter:state.counter+1,
                 bill:state.bill+price
             };
+        case DELETE_ITEM:
+
+            const obj = state.items.filter((el)=>el.id===action.payload);
+            var price = 0;
+            if(obj[0].quan=='30'){
+                price=329;
+            }
+            else if(obj[0].quan=='24'){
+                price=290;
+            }
+            else if(obj[0].quan=='12'){
+                price=160;
+            }
+            else if(obj[0].quan=='60'){
+                price=599;
+            }
+            else if(obj[0].quan=='90'){
+                price=879;
+            }   
+            console.log(price);
+            return{
+                ...state,
+                items:[...state.items.filter((el)=>el.id!==action.payload)],
+                counter:state.counter-1,
+                bill:state.bill-price,
+            }
         default:
             return state;
     }

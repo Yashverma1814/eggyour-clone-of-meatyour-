@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { useDispatch } from 'react-redux';
+import { deleteItem } from '../../redux/Cart/action';
 export const ProductCard = ({item}) => {
   console.log(item);
   var price;
@@ -18,6 +19,13 @@ export const ProductCard = ({item}) => {
   else if(item.quan=='90'){
     price='879';
   }
+  const dispatch = useDispatch();
+
+  const handleRemove = () =>{
+    dispatch(deleteItem(item.id));
+  }
+
+
   return (
     <div>
         <div>
@@ -26,7 +34,8 @@ export const ProductCard = ({item}) => {
                 <div><img src="https://cdn.shopify.com/s/files/1/0595/0449/2726/products/MEATYOUR_7_67x.png?v=1640575967" alt="" /></div>
             </div>
             <div className='removeButtonDiv'>
-              <button className='removeButton'>Remove</button>
+
+              <button className='removeButton' onClick={handleRemove}>Remove</button>
             </div>
         </div>
     </div>
